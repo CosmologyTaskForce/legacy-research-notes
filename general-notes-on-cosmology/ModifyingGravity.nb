@@ -1,0 +1,71 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      1764,         62]
+NotebookOptionsPosition[      1419,         45]
+NotebookOutlinePosition[      1763,         60]
+CellTagsIndexPosition[      1720,         57]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Modifying Gravity", "Section",
+ CellChangeTimes->{{3.5446022370798783`*^9, 3.544602253844837*^9}}],
+
+Cell["\<\
+Could it be possible that the modified gravity theories reflects a Fermi \
+distribution.
+
+\
+\>", "Text",
+ CellChangeTimes->{{3.544602257486046*^9, 3.5446022932380905`*^9}}],
+
+Cell["\<\
+A condensation of something leads to gravity? Graviton are fermions? So that \
+it can not condense like bosons? That matter makes a vacuum of graviton, and \
+different matter balls trend to stay together so that the surface energy of \
+graviton are the smallest. Maximum entropy and mimium energy, like what is \
+happening in molecule worlds.\
+\>", "Text",
+ CellChangeTimes->{{3.544612046564949*^9, 3.5446120554574575`*^9}, {
+  3.544612167185848*^9, 3.544612191986266*^9}, {3.544612734666306*^9, 
+  3.544612942682204*^9}}]
+}, Open  ]]
+},
+WindowSize->{707, 553},
+WindowMargins->{{10, Automatic}, {Automatic, 46}},
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 104, 1, 71, "Section"],
+Cell[686, 25, 182, 6, 68, "Text"],
+Cell[871, 33, 532, 9, 87, "Text"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

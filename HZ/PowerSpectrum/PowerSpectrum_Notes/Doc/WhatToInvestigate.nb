@@ -1,0 +1,103 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      2551,         94]
+NotebookOptionsPosition[      1866,         66]
+NotebookOutlinePosition[      2211,         81]
+CellTagsIndexPosition[      2168,         78]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+What to do about the power spectrum\
+\>", "Section",
+ CellChangeTimes->{{3.551414269609889*^9, 3.551414278760412*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Power Spectrum", "Subsection",
+ CellChangeTimes->{{3.551414304009856*^9, 3.5514143086831236`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Power spectrum change under Different EoS\
+\>", "ItemNumbered",
+ CellChangeTimes->{{3.551414327978227*^9, 3.5514143399719133`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Phantom EoS: what do the power spectrum behave if the EoS is phantom like.\
+\>", "SubitemNumbered",
+ CellChangeTimes->{{3.551414379266161*^9, 3.5514144119550304`*^9}}],
+
+Cell["Other kinds of EoS", "SubitemNumbered",
+ CellChangeTimes->{{3.5514144207515335`*^9, 3.551414424138727*^9}}]
+}, Open  ]],
+
+Cell["\<\
+Sound speed of dark energy. What is the effect of sound speed of dark energy \
+on power spectrum.\
+\>", "ItemNumbered",
+ CellChangeTimes->{{3.55141443257121*^9, 3.5514144730265236`*^9}}],
+
+Cell["Include DE perturbation.", "ItemNumbered",
+ CellChangeTimes->{{3.5514144778157973`*^9, 3.551414482511066*^9}, {
+  3.551414521715308*^9, 3.5514145217193084`*^9}}],
+
+Cell["What about time dependent EoS.", "ItemNumbered",
+ CellChangeTimes->{{3.5514145224003477`*^9, 3.551414532010897*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{707, 553},
+WindowMargins->{{24, Automatic}, {Automatic, 30}},
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (February 23, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 128, 3, 71, "Section"],
+Cell[CellGroupData[{
+Cell[732, 29, 104, 1, 36, "Subsection"],
+Cell[CellGroupData[{
+Cell[861, 34, 141, 3, 24, "ItemNumbered"],
+Cell[CellGroupData[{
+Cell[1027, 41, 177, 3, 24, "SubitemNumbered"],
+Cell[1207, 46, 113, 1, 24, "SubitemNumbered"]
+}, Open  ]],
+Cell[1335, 50, 196, 4, 24, "ItemNumbered"],
+Cell[1534, 56, 167, 2, 24, "ItemNumbered"],
+Cell[1704, 60, 122, 1, 24, "ItemNumbered"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

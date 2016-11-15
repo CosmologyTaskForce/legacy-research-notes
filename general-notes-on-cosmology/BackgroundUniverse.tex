@@ -1,0 +1,192 @@
+% !TEX program = xelatex
+
+\documentclass{article}
+
+\usepackage{amsmath,amsthm,amsfonts,amssymb,bm}
+\addtolength{\textheight}{5.0cm}
+\addtolength{\voffset}{-3.5cm}
+\addtolength{\hoffset}{-2.5cm}
+\addtolength{\textwidth}{4.0cm}
+
+%\allowdisplaybreaks
+
+\usepackage{subeqnarray}
+\usepackage{mathrsfs}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{url}
+\usepackage{ulem}
+\usepackage{indentfirst}
+%\usepackage{textcomp}
+%\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage[hang,small,bf]{caption}
+\setlength{\captionmargin}{50pt}
+
+
+%%Here is the configuration for chinese. 
+%\usepackage[cm-default]{fontspec}
+%\usepackage{xunicode}
+%\usepackage{xltxtra}
+%\setmainfont{AR PL UKai CN}
+%\setsansfont[BoldFont=SimHei]{KaiTi_GB2312}
+%\setmonofont{WenQuanYi Micro Hei Mono}
+
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+
+
+
+%includeonly{}
+
+
+%\graphicspath{{Figures/}{Figures/CPL/}{Figures/DE/}{Figures/P/}{Figures/DESync/}{Figures/DESync/DEs_Sync3/}}
+
+
+%\usepackage{tikz}
+%\usetikzlibrary{mindmap,trees}
+
+\begin{document}
+\title{Review of Background Universe}
+\author{MA Lei}
+\maketitle
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+This is a review of the backgound universe, not a starter.
+
+
+The background universe is rather simple if we adopt the idea that the fundamental cosmology principle is flawless.
+
+The background of the universe can be identified with the following quantities, i.e,,
+
+\begin{itemize}
+\item
+$a$, which is the scale factor, measures the scale of the metric.
+
+\item
+$k$, is the curvature of the universe. A conformal transformation confined this to have only three possible values: $0$, $-1$, $1$.
+
+\item
+$t$, which is the age of the universe, shows the age of the universe for free falling observors.
+
+\item
+$\rho_i$, is the energy density of a constituent.
+
+\item
+$p_i$, is the pressure of a constituent.
+
+\end{itemize}
+
+Among these, $a$, $k$ and $t$ are the spacetime quantities while $\rho_i$ and $p_i$ are the energy momentum quantities.
+
+To make things easier, we have to introduce several auxiliary quantities.
+
+\begin{itemize}
+\item
+$H_0$, which is the Hubble function, is defined as $H=\frac{\dot a}{a} |_0$. \footnote{Though out this note, $\cdot$ stands for time derivative.}
+
+\item
+$q_0$, which is the decelarate rate today, is defined as
+\begin{equation}q_0=-\frac{1}{H_0^2}\frac{\ddot a}{a}|_0    .\end{equation}
+\end{itemize}
+
+In this way, through a rather complicated computation by hand or a fast and secure computation by Mathematica of Einstein equations, we can get the freedmann equations in FRW universe, which are
+
+\begin{eqnarray}
+3(\dot a ^2 + k)/a^2 &=& 8 \pi G \rho \\
+2 \ddot a/a + (\dot a^2 + k)/a^2 &=& -8 \pi G p  ,
+\end{eqnarray}
+
+or
+
+\begin{eqnarray}
+H^2 + k/a^2 &=& 8 \pi G \rho /3 \\
+2 \dot H + 3H^2 + k/a^2 &=& -8 \pi G p   ,
+\end{eqnarray}
+
+or
+
+\begin{eqnarray}
+3 \ddot a &=& -4 \pi a (\rho + 3p) \\
+\dot \rho + 3 (\rho + p) \dot a/a &=& 0   .
+\end{eqnarray}
+
+From these equations we can find a very useful equation,
+\begin{equation}
+\dot H = -4 \pi G (\rho + p) + k/a^2    .
+\end{equation}
+
+
+But is the background universe always so simple and clean? Never thought in that way. Let's start our story of backgound universe now.
+
+
+\section{Parameters}
+
+Previously, we have several parameters to charaterise a smooth FRW universe. The point is, that set of parameters is not so convinient.
+
+\begin{itemize}
+\item
+$H_0$;
+\item
+$q_0$;
+\item
+$\Omega_0 = \frac{\rho}{3H_0^2}|_0$;
+\item
+$w_0$, the equation of state of the constituent in the universe.
+\item
+$K_0=k/a_0^2={}^3R_0/6$
+\end{itemize}
+
+
+\section{Famous Models}
+
+We have a "everywhere-isotropic Robertson-Walker"\footnote{George F R Ellis, Cosmological Models} geometry, on which the famous Friedmann-Lemaitre models are defined.
+
+
+FLRW universe has the metric
+\begin{eqnarray}
+\mathrm ds^2=-\mathrm dt^2+a^2(\mathrm dr^2f^2\mathrm d\Omega^2)
+\end{eqnarray}
+where $f$ can be $\sin r$,$\sinh r$ or $r$, on condition that curvature $k=+1,-1,0$.
+
+
+
+\section{Equations}
+
+Start from Einstein equation and diagonal energy momentum tensor, we can find two equations.
+\begin{eqnarray}
+3(\dot a^2+k)/a^2 &=& 8\pi G \rho \text{~~~~~~Friedmann equation}\\
+2\ddot a/a+(\dot a^2 +k)/a^2 &=& -8\pi G p
+\end{eqnarray}
+
+We can combine the two equations to eliminate $k$,
+\begin{equation}
+3 \ddot a + 4\pi G a (\rho+3p)    . 
+\end{equation}
+Without suprise, this is the Raychaudhuri equation in this case, which describes gravitational attraction. This shows $\rho+3p$ is the source of gravitational attraction, or "active gravitational mass density"\footnote{Ellis etc, Cosmological Models, arxiv:gr-qc/9812046v5 page 10.}.
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}\

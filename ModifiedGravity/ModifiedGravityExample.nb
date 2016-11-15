@@ -1,0 +1,256 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      9730,        247]
+NotebookOptionsPosition[      8970,        217]
+NotebookOutlinePosition[      9313,        232]
+CellTagsIndexPosition[      9270,        229]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<ModifiedGravity`\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.5469996008344727`*^9, 3.546999609894991*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["assistant"], "Input",
+ CellChangeTimes->{{3.5470100504821587`*^9, 3.54701005540944*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     ButtonBox["\<\"DisformalTransformation\"\>",
+      Appearance->{"DialogBox"},
+      ButtonFunction:>Print[ModifiedGravity`DisformalTransformation],
+      Evaluator->Automatic,
+      Method->"Preemptive"]}
+   },
+   AutoDelete->False,
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[0.]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  ButtonBar[{
+   "DisformalTransformation" :> 
+    Print[ModifiedGravity`DisformalTransformation]}, 
+   Appearance -> {Automatic}]]], "Output",
+ CellChangeTimes->{{3.547010056418498*^9, 3.5470100637579174`*^9}, 
+   3.5470101294756765`*^9}],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"Disformal Transformation\"\>", "\[SpanFromLeft]", "\[SpanFromLeft]"},
+    {"\<\"Name\"\>", "\<\"Content\"\>", "\<\"Comment\"\>"},
+    {"\<\"Metric\"\>", "\<\"\\!\\(\\*SubscriptBox[OverscriptBox[\\(g\\), \\(-\
+\\)], \\(\[Mu]\[Nu]\\)]\\)=C(\[Phi])\\!\\(\\*SubscriptBox[\\(g\\), \\(\[Mu]\
+\[Nu]\\)]\\)+D(\[Phi])\\!\\(\\*SubscriptBox[\\(\[Phi]\\), \
+\\(\\(,\\)\\(\[Mu]\\)\\)]\\)\\!\\(\\*SubscriptBox[\\(\[Phi]\\), \\(\\(,\\)\\(\
+\[Nu]\\)\\)]\\)\"\>", "\<\"The metric that relates geometry and scalar field.\
+\"\>"},
+    {"\<\"Action\"\>", "\<\"S=\[Integral] \\!\\(\\*SuperscriptBox[\\(d\\), \
+\\(4\\)]\\)x (\\!\\(\\*SqrtBox[\\(-g\\)]\\)(\\!\\(\\*FractionBox[\\(1\\), \
+\\(16\\\\ \[Pi]\\\\ G\\)]\\) R - \
+\\!\\(\\*SubscriptBox[\\(\[ScriptCapitalL]\\), \\(\[Phi]\\)]\\)) - \
+\\!\\(\\*SqrtBox[\\(-\\*OverscriptBox[\\(g\\), \\(-\\)]\\)]\\) \
+\\!\\(\\*OverscriptBox[SubscriptBox[\\(\[ScriptCapitalL]\\), \\(m\\)], \
+\\(-\\)]\\))\"\>", "\<\"\"\>"},
+    {"\<\"Energy-Momentum\"\>", 
+     TagBox[GridBox[{
+        {"\<\"Matter\"\>", "\<\"\\!\\(\\*SubsuperscriptBox[\\(T\\), \\(\[Phi]\
+\\), \\(\[Mu]\[Nu]\\)]\\)=\\!\\(\\*FractionBox[\\(2\\), SqrtBox[\\(-g\\)]]\\)\
+\\!\\(\\*FractionBox[\\(\[Delta] \\((\\*SqrtBox[\\(-g\\)] \\*SubscriptBox[\\(\
+\[ScriptCapitalL]\\), \\(\[Phi]\\)])\\)\\), SubscriptBox[\\(\[Delta]g\\), \\(\
+\[Mu]\[Nu]\\)]]\\)\"\>"},
+        {"\<\"Scalar field\"\>", "\<\"\\!\\(\\*SubsuperscriptBox[\\(T\\), \
+\\(m\\), \\(\[Mu]\[Nu]\\)]\\)=\\!\\(\\*FractionBox[\\(2\\), \
+SqrtBox[\\(-g\\)]]\\)\\!\\(\\*FractionBox[\\(\[Delta] \
+\\((\\*SqrtBox[\\(-\\*OverscriptBox[\\(g\\), \\(-\\)]\\)] \
+\\*OverscriptBox[SubscriptBox[\\(\[ScriptCapitalL]\\), \\(m\\)], \\(-\\)])\\)\
+\\), SubscriptBox[\\(\[Delta]g\\), \\(\[Mu]\[Nu]\\)]]\\)\"\>"}
+       },
+       AutoDelete->False,
+       GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+       GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+      "Grid"], "\<\"Definations of energy-momentum tensor.\"\>"},
+    {"\<\"Conservation\"\>", 
+     TagBox[GridBox[{
+        {"\<\"Total\"\>", "\<\"(\\!\\(\\*SubsuperscriptBox[\\(G\\), \
+\\(\\(;\\)\\(\[Mu]\\)\\), \
+\\(\[Mu]\[Nu]\\)]\\)=((\\!\\(\\*SubsuperscriptBox[\\(T\\), \\((m)\\), \
+\\(\[Mu]\[Nu]\\)]\\)+\\!\\(\\*SubsuperscriptBox[\\(T\\), \\((\[Phi])\\), \\(\
+\[Mu]\[Nu]\\)]\\)\\!\\(\\*SubscriptBox[\\()\\), \
+\\(\\(;\\)\\(\[Mu]\\)\\)]\\)\"\>"},
+        {"\<\"Matter\"\>", "\<\"(I still do not know how to display this \
+much)\"\>"},
+        {"\<\"Scalar field\"\>", "\<\"Well later\"\>"}
+       },
+       AutoDelete->False,
+       GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+       GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+      "Grid"], ""}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Print",
+ CellChangeTimes->{3.5470101303987293`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Theories", "Section",
+ CellChangeTimes->{{3.547011121500417*^9, 3.547011124938614*^9}}],
+
+Cell["\<\
+So we have to summarize the theories.
+\
+\>", "Text",
+ CellChangeTimes->{{3.547011128428813*^9, 3.547011153764262*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["f(R) Theories", "Subsection",
+ CellChangeTimes->{{3.54701120600025*^9, 3.5470112226472025`*^9}}],
+
+Cell["\<\
+Keypoint: Theories that changes R to f(R) in Hillbert-Einstein action.\
+\>", "Text",
+ CellChangeTimes->{{3.5470112250043373`*^9, 3.547011249393732*^9}, {
+  3.547011280941537*^9, 3.5470113749499135`*^9}}],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[ScriptCapitalL]", "=", 
+    RowBox[{
+     SqrtBox[
+      RowBox[{"-", "g"}]], "R"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "    ->  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[ScriptCapitalL]", "=", 
+    RowBox[{
+     SqrtBox[
+      RowBox[{"-", "g"}]], 
+     RowBox[{"f", "(", "R", ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Text",
+ CellChangeTimes->{{3.5470113792521596`*^9, 3.547011388488688*^9}, {
+  3.5470114252337894`*^9, 3.5470114401746445`*^9}, {3.5470115190491557`*^9, 
+  3.5470115525970745`*^9}, {3.5470116418401785`*^9, 3.54701175253551*^9}}],
+
+Cell["This is a ", "Text",
+ CellChangeTimes->{{3.5470117613170123`*^9, 3.547011763656146*^9}, {
+  3.5470118915694623`*^9, 3.547011896864765*^9}}],
+
+Cell["\<\
+This is a list of what should be displayed. I think it is not nessarily that \
+everything is displayed but something essential.\
+\>", "Text",
+ CellChangeTimes->{{3.547010609819151*^9, 3.5470106429140434`*^9}}],
+
+Cell[TextData[Cell[BoxData[GridBox[{
+   {"\[Placeholder]", GridBox[{
+      {
+       RowBox[{"f", 
+        RowBox[{"(", "R", ")"}]}], "\[SpanFromLeft]", "\[SpanFromLeft]", 
+       "\[SpanFromLeft]"}
+     },
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, 
+       "Rows" -> {False, {True}, False}, "RowsIndexed" -> {}}], 
+    "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+    "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", ""},
+   {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+    "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+    "\[Placeholder]", "\[Placeholder]"},
+   {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+    "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+    "\[Placeholder]", "\[Placeholder]"},
+   {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+    "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+    "\[Placeholder]", "\[Placeholder]"},
+   {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+    "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+    "\[Placeholder]", "\[Placeholder]"},
+   {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+    "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+    "\[Placeholder]", "\[Placeholder]"},
+   {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+    "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+    "\[Placeholder]", "\[Placeholder]"},
+   {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+    "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+    "\[Placeholder]", "\[Placeholder]"},
+   {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+    "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+    "\[Placeholder]", "\[Placeholder]"},
+   {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+    "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+    "\[Placeholder]", "\[Placeholder]"}
+  },
+  GridBoxDividers->{
+   "Columns" -> {{True}}, "ColumnsIndexed" -> {}, "Rows" -> {{True}}, 
+    "RowsIndexed" -> {}}]], "Text"]], "Text",
+ CellFrame->{{0, 0}, {0, 2}},
+ CellChangeTimes->{{3.5470106541886883`*^9, 3.547010832880909*^9}, {
+  3.547010863918684*^9, 3.54701091245146*^9}, {3.547010945928375*^9, 
+  3.547011003659677*^9}, {3.547011044026986*^9, 3.5470110728136325`*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1016, 681},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 149, 2, 31, "Input"],
+Cell[CellGroupData[{
+Cell[731, 26, 102, 1, 31, "Input"],
+Cell[836, 29, 861, 23, 42, "Output"],
+Cell[1700, 54, 2982, 56, 326, "Print"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4719, 115, 93, 1, 71, "Section"],
+Cell[4815, 118, 128, 4, 49, "Text"],
+Cell[CellGroupData[{
+Cell[4968, 126, 102, 1, 36, "Subsection"],
+Cell[5073, 129, 213, 4, 30, "Text"],
+Cell[5289, 135, 651, 20, 33, "Text"],
+Cell[5943, 157, 145, 2, 30, "Text"],
+Cell[6091, 161, 219, 4, 30, "Text"],
+Cell[6313, 167, 2629, 46, 219, "Text"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

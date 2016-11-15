@@ -1,0 +1,286 @@
+% !TEX program = xelatex
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{amsthm,amsfonts,amssymb,bm}
+\usepackage[fleqn]{amsmath}
+
+% Page settings
+\addtolength{\textheight}{2.0cm}
+\addtolength{\voffset}{-2cm}
+\addtolength{\hoffset}{-2.0cm}
+\addtolength{\textwidth}{4.0cm}
+
+%\allowdisplaybreaks
+
+%\usepackage{subeqnarray}
+\usepackage{mathrsfs}
+\usepackage{color}
+\usepackage{url}
+%\usepackage{ulem}
+\usepackage{indentfirst}   % Indent first line of a paragraph
+%\usepackage{textcomp}
+
+
+
+
+%%Here is the configuration for chinese. setmainfont is the default font of the text.
+\usepackage[cm-default]{fontspec}
+\usepackage{xunicode}
+%\usepackage{xltxtra}
+\setmainfont{"微软雅黑"}
+%\setsansfont[BoldFont=SimHei]{KaiTi_GB2312}
+%\setmonofont{NSimSun}
+
+\usepackage{setspace}
+\onehalfspacing
+
+
+\XeTeXlinebreaklocale "zh"
+%\XeTeXlinebreakskip = 0pt plus 1pt
+
+% Figure, Diagram, Caption settings
+%\usepackage{tikz}
+%\usetikzlibrary{mindmap,trees}
+\usepackage{graphicx}
+%\usepackage{graphics}
+%\usepackage[hang,small,bf]{caption}
+%\setlength{\captionmargin}{50pt}
+
+% Redefine some fonts.
+\newfontfamily\heiti{"黑体"}
+\newfontfamily\fs{"仿宋"}
+\newfontfamily\yahei{"微软雅黑"}
+
+
+
+%\usepackage{tikz}
+%\usetikzlibrary{mindmap,trees}
+\usepackage{graphicx}
+%\usepackage[hang,small,bf]{caption}
+%\setlength{\captionmargin}{50pt}
+\graphicspath{{Figures/}}
+
+
+\input{cc}
+
+\begin{document}
+\title{修改引力}
+\author{\small 马磊}
+\maketitle
+
+
+
+%\begin{figure}[!htbp]
+%\centering
+%\includegraphics[scale=0.2]{by.eps}\includegraphics[scale=0.2]{nc.eps}\includegraphics[scale=0.2]{nc.eps}
+%\end{figure}
+
+\begin{center}
+\CcGroupByNcSa{0.5}{0.95ex} \\
+Creative Commons: BY-NC-SA
+%\rule{150pt}{0.5pt}
+\end{center}
+
+
+\newcommand{\dd}{\mathrm d}
+\newcommand{\HH}{\mathcal H}
+%\newcommand{\CN}{{\it Cosmologia Notebook}}
+\newenvironment{eqnset}
+{\begin{equation}\left \bracevert \begin{array}{l}}
+{\end{array} \right. \end{equation}}
+
+\newenvironment{eqn}
+{\begin{equation}\left \bracevert \begin{array}{l}}
+{\end{array} \right. \end{equation}}
+
+
+%This document had would had been used on Ways to Singularity, which is a website that supports MathJax. So some html elements may occur in this document. DELETE THIS when publishing. (If you are not very clear on the grammar I used here, read the academic publication called Time Traveller's Handbook of 1001 Tense Formations by Dr Dan Streetmentioner, which had would had been publish in year 220010 of Gregorian Calendar.)
+
+%\part{X-ray}
+
+\vspace{2ex}
+
+
+\hrule\vspace{1pt}\hrule
+\begin{center}
+\mbox{\Huge \bf 背景知识} \\
+\end{center}
+\hrule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+四十多年前，人们很惊讶的发现很多螺旋星系的旋转曲线并不遵循牛顿的引力定律[<a name="rotationb"><a href="#rotation">1</a></a>]。在星系尺度上，是什么提供了额外的引力？
+
+十年前，人们通过超新星标准烛光的测量，得知宇宙的膨胀在加速。在星系之间，是什么抵消了大量的引力？
+
+自1916年 Albert Einstein 引入了广义相对论（GR），甚至在日后不久被几个实验验证之后，人们仍然在思考，广义相对论真的是无懈可击的么？后来人们提出的 Kaluza-Klein 理论，scalar-tensor 理论以及 Brans-Dicke 理论等，尝试为GR所不能为之事。
+
+后来宇宙学迅猛发展，一个常常用来作为标杆的模型—— LCDM 模型建立起来。LCDM 基本是在 GR 基础上发展起来的。出于多种原因（星系旋转曲线，物质演化，加速膨胀等），人们在宇宙学原理基础上使用 GR，并引入了暗物质和宇宙学常数（暗能量），以此来作为我们的宇宙的一个近似描述。在很多方面这个模型非常成功，看起来，剩下的事情只是修修补补了。
+
+但是真的是这样么？
+
+<div style="float:right;padding:5px 5px 5px 5px;margin-bottom:5px;margin-left:5px;border:1px dashed grey;"><a href="#part1">[为什么要修改引力]</a>
+<a href="#part2">[如果修改引力]</a>
+<a href="#part3">[有哪些修改引力理论]</a>
+<a href="#part4">[总结]</a></div>
+
+
+<strong><a name="part1">第一部分</a></strong> 我们可以不引入暗物质和暗能量么？
+
+对于暗物质，我们有很好的理由来引入，但是我们真的需要么？
+
+我们可以使用中学生就可以很好的理解的方式来重新考察一下星系旋转曲线。当我们发现了星系的旋转曲线的异常行为，我们可以认为有我们看不见的物质提供了额外的引力，或者，我们也可以重新考虑我们所使用的引力理论。这种旋转曲线这种情况下，牛顿的引力理论应当是一个合理的近似，（ $a$ 为加速度，$M$ 为中心质量，$m$ 为绕中心旋转的恒星的质量，$G$ 为引力常数， $r$ 为恒星与中心的距离）
+
+\begin{equation}
+m a = -G \frac{mM}{r^2}
+\end{equation}
+
+为了跟星系的旋转曲线符合，那么我们想要当 $r$ 很大的时候，加速度趋向于一个跟 $r$ 成反比的式子，这样就可以保证恒星的旋转速度 $v=\sqrt{r a}$ 是一个常数。那么我们可以引入一个函数$\mu(a/a_0)$，使得
+
+\begin{equation}
+m\cdot a \cdot \mu(\frac{a}{a_0}) = -G \frac{mM}{r^2}
+\end{equation}
+
+其中 $\mu(a/a_0)$ 满足当 $r$ 很大时，$\mu(a/a_0)$ 趋于 $a/a_0$，如此一来，正好保证了恒星的速度
+
+\begin{equation}
+v=\left( G M a_0 \right)^{1/4}
+\end{equation}
+
+使用合适的参数，总可以得到一个合适的 $\mu(a/a_0)$ 函数。
+
+这是一个很好的例子，这说明我们可能并不是只能不断的向宇宙中引入奇奇怪怪（“看不见”，奇怪的物态方程等）的物质，想法，我们有希望保留我们对物质结构的理解，而对引力理论进行修正。何况，在宇宙尺度上，我们并没有一个很严格的实验来完美的验证 GR，那么修改 GR，就理应是一个应该尝试的方向。
+
+作为一个更好的例子，我们用类似的逻辑来看一下暗能量。
+
+我们先看一下 LCDM 的作用量。
+
+\begin{equation}
+S=\frac{1}{2\kappa^2}\int R \sqrt{-g}\mathrm d^4x+\int \sqrt{-g}(\mathcal L_m -\frac{\Lambda}{\kappa^2}) \mathrm d^4x
+\end{equation}
+
+现在假设我们没有暗能量，在这个简单的模型中，也就是没有宇宙学常数 $\Lambda$。要解释宇宙的加速膨胀，我们就只需要将 $\Lambda$ 项放到时空背景部分即可。:)
+
+\begin{equation}
+S=\frac{1}{2\kappa^2}\int (R-2\Lambda) \sqrt{-g}\mathrm d^4x+\int \sqrt{-g}\mathcal L_m \mathrm d^4x
+\end{equation}
+
+当然，这是个玩笑。虽然这确实是一种最最最简单的修改引力的方式，但是实际上并没有提供很多的帮助。实际上我们可以来看一下比较流行的 f(R) 引力理论的情况。f(R) 引力是说，我们可以把 GR 中的标量曲率 $R$ 换做 $R$ 的函数，即
+
+\begin{equation}
+S=\frac{1}{2\kappa^2}\int f(R) \sqrt{-g}\mathrm d^4x+\int \sqrt{-g} \mathcal L_m \mathrm d^4x
+\end{equation}
+
+取合适的 f(R) 形式我们可以很自然的在没有宇宙学常数帮助的情况下，得到宇宙加速膨胀的结论。那么什么叫做合适的形式呢？f(R) 理论有很多的限制，不详细提及，不过有一点，要解释加速膨胀，这一项在当今的值需要为负，这样才能像 LCDM 模型一样，提供一个加速膨胀的效果。比如，我们可以取 f(R) 为
+
+\begin{equation}
+f(R)=-m^2\frac{c_1(R/m^2)}{c_2 (r/m^2)+1}
+\end{equation}
+
+其中 $c_1$, $c_2$, $m^2$ 为正[<a name="fRb"><a href="#fR">2</a></a>]。这个函数有个特点，就是总是为负，也就是起到了 LCDM 模型里面 $-2\Lambda$ 的作用，当 $R$ 很大的时候，f(R) 就退化为一个常数，这个常数就等价于 LCDM 中的 $-2\Lambda$。
+
+很好，这样一个没有暗能量的模型就可以建立起来了，代价是，Einstein 的 GR 被修改了。当然 GR 依然在其适用范围内与这样一个修改引力理论的模型吻合。
+
+总结一下上面两个例子：既然我们并没有真正的在宇宙学的尺度上检验过 Einstein 的 GR，而且我们可以很轻松的创建一些简单的理论来解释一些现象，那么修改引力作为一种研究思路，是很有前景的。
+
+
+
+<strong><a name="part2">第二部分</a></strong> 
+
+那么，如果我们要构建一个新的引力的理论，这个理论看起来应该是什么样的呢？或者如何知道这个理论是否合适？
+
+这是一个非常难以回答的问题。但是，至少我们知道，这个新的引力理论必须满足一下量个极端近似：
+<ul>
+	<li>高物质密度的地方，新理论必须渐进接近 GR。</li> 原因之一就是为了满足太阳系的限制，因为 GR 在太阳系内是一个很好的理论。
+	<li>低物质密度的区域，新理论能够产生第五种力，用了得到加速膨胀的宇宙。</li> 这主要为了配合超新星的观测数据。
+</ul>
+
+这样，就需要有一个"screening mechanism"，即必须有一个机制把第五种力屏蔽在高物质密度区域之外。[<a name="screeningb"><a href="#screening">3</a></a>]这是我们可以修改引力的一个关键所在。至于具体细节，此处只得略去。
+
+假设我们现在根据这样的条件，构建了一个新的引力理论，那么如果想要确认其是否合适，最可靠的方式是将理论的结果与以下几类观测做对照：SN, CMB, Matter, ISW, Lensing. 因为修改后的引力理论会影响宇宙背景的演化，我们上面提到的那个 f(R) 的具体例子就是如此——它在宇宙演化的晚期会产生于 LCDM 不同的“第五种力”。同样，修改引力也会导致对扰动的变化，比如加速膨胀的速率变化之后，比如导致物质的演化不同，即物质的功率谱不同。
+
+
+<strong><a name="part3">第三部分</a></strong> 
+
+目前已经有很多的引力理论。其中比较有名的有
+Brans-Dicke, Scalar-tensor, f(R), DGP, Galileon, Gauss-Bonnet, R/2+f(G), 
+甚至有些Lorentz violating的理论。
+
+这些理论大都比较复杂，甚至复杂到找到一个符合观测的模型也不太容易。这里面做的比较多的是 f(R) 理论，该理论仅仅产生了4类（到5类）可能是符合观测的类型的具体模型，由此可见，修改引力之后，要找到合适的模型的挑战是非常大的。
+
+
+<strong><a name="part4">第四部分</a></strong> 
+
+作为总结，我绘制了一张 mind map. 希望读者在读完这篇文章之后有所收获。谢谢各位阅读。
+
+<a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/04/ModifyingGravity1.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/04/ModifyingGravity1.jpg" alt="" title="ModifyingGravity" width="570"/></a>
+（如果无法辨别，请<a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/04/ModifyingGravity1.jpg">点击此处查看大图</a>。）
+
+
+[<a name="rotation">1</a>] http://en.wikipedia.org/wiki/Galaxy_rotation_curves     | (<a href="#rotationb">Back</a>)
+
+[<a name="fR">2</a>] http://arxiv.org/abs/0705.1158
+关于 f(R) 的一点点额外的介绍，可以读我以前的科普文：http://multiverse.lamost.org/blog/2717  | (<a href="#fRb">Back</a>)
+
+[<a name="screening">3</a>] 两个比较好的例子是 Vainshtein mechanism和 Chameleon mechanism。前者考虑标量场的自相互作用，后者考虑标量场和周围物质的耦合。| (<a href="#screeningb">Back</a>)
+
+[4] 本文参考了 Kazuya Koyama 的几份 lecture，可以在这里看到 http://iastro.lamost.org/x/node/112
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

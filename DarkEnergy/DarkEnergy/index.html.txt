@@ -1,0 +1,7 @@
+<!--START CLICKABLE IMAGEMAP-->
+<div style="text-align : center;">
+<img src="index.jpg" usemap="#EReIyYQUREKYbw4lqRL3w" alt="Dark Energy" border ="0">
+<map name="EReIyYQUREKYbw4lqRL3w">
+</map>
+</div>
+<!--END CLICKABLE IMAGEMAP-->

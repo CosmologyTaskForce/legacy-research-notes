@@ -1,0 +1,241 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      6681,        232]
+NotebookOptionsPosition[      5550,        195]
+NotebookOutlinePosition[      6066,        213]
+CellTagsIndexPosition[      6023,        210]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Growth Index", "Title",
+ CellChangeTimes->{{3.547348656797832*^9, 3.5473486589869576`*^9}}],
+
+Cell["MA Lei", "Author",
+ CellChangeTimes->{{3.547363768724185*^9, 3.547363772029374*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Abstract", "AbstractSection",
+ CellChangeTimes->{{3.5473637856601534`*^9, 3.547363789930398*^9}}],
+
+Cell["\<\
+This is a note on arXiv:1203.6724.\
+\>", "Abstract",
+ CellChangeTimes->{{3.547363803617181*^9, 3.5473638039792013`*^9}, {
+  3.5473638614864902`*^9, 3.5473638938283405`*^9}}],
+
+Cell["", "Abstract",
+ CellChangeTimes->{{3.547363895698447*^9, 3.5473638968345127`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Background Equations", "Section",
+ CellChangeTimes->{{3.5473638978485703`*^9, 3.5473639324005466`*^9}}],
+
+Cell["\<\
+The Friedmann equaiton of a model with dark energy equaiton of state \
+parameterized as w[a],\
+\>", "TextIndent",
+ CellChangeTimes->{{3.547363934453664*^9, 3.547364101202202*^9}, {
+  3.547371854843684*^9, 3.5473718550836983`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox["d\[Rho]", "dt"], "=", 
+   RowBox[{
+    RowBox[{"-", "3"}], 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"w", "[", "a", "]"}]}], ")"}], "\[Rho]", 
+    FractionBox[
+     OverscriptBox["a", "."], "a"]}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.547371859904974*^9, 3.547371894477951*^9}, {
+  3.5473719253507175`*^9, 3.547371928641906*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox["d\[Rho]", "dt"], "=", 
+   RowBox[{
+    RowBox[{"-", "3"}], 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"w", "[", "a", "]"}]}], ")"}], "\[Rho]", " ", 
+    FractionBox["da", "dt"], 
+    FractionBox["1", "a"]}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.547371898932206*^9, 3.5473719628528624`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox["d\[Rho]", "\[Rho]"], "=", 
+   RowBox[{
+    RowBox[{"-", "3"}], 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"w", "[", "a", "]"}]}], ")"}], 
+    FractionBox["da", "a"]}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.5473719563714914`*^9, 3.5473719946856833`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"dLn", "[", "\[Rho]", "]"}], "=", 
+   RowBox[{
+    RowBox[{"-", "3"}], 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"w", "[", "a", "]"}]}], ")"}], 
+    RowBox[{"dLn", "[", "a", "]"}]}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.547371995996758*^9, 3.5473720461506267`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"Ln", "[", "\[Rho]", "]"}], 
+    SubscriptBox["|", "a"], 
+    RowBox[{"-", 
+     RowBox[{"Ln", "[", "\[Rho]", "]"}]}], 
+    SubscriptBox["|", 
+     SubscriptBox["a", "0"]]}], "=", 
+   RowBox[{
+    RowBox[{"-", "3"}], 
+    RowBox[{
+     SuperscriptBox[
+      SubscriptBox["\[Integral]", 
+       SubscriptBox["a", "0"]], "a"], 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"w", "[", "a", "]"}]}], ")"}], 
+      RowBox[{"dLn", "[", "a", "]"}]}]}]}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.5473720489317856`*^9, 3.5473721363327847`*^9}}],
+
+Cell[TextData[{
+ "Choose ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["a", "0"], "=", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ","
+}], "Text",
+ CellChangeTimes->{{3.547372142266124*^9, 3.547372157872017*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Rho]", "[", "a", "]"}], "=", 
+   RowBox[{
+    RowBox[{"\[Rho]", "[", "1", "]"}], " ", 
+    SuperscriptBox["e", 
+     RowBox[{"3", 
+      RowBox[{
+       SuperscriptBox[
+        SubscriptBox["\[Integral]", "a"], "1"], 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"w", "[", "a", "]"}]}], ")"}], 
+        RowBox[{"dLn", "[", "a", "]"}]}]}]}]]}]}], 
+  TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.5473721603141565`*^9, 3.5473722939798017`*^9}, {
+  3.547372496656394*^9, 3.54737251232629*^9}}],
+
+Cell["We can define a Hubble flow,", "Text",
+ CellChangeTimes->{{3.5473721375908566`*^9, 3.547372138109886*^9}, {
+  3.5473723900062943`*^9, 3.547372409849429*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    FractionBox[
+     SuperscriptBox[
+      RowBox[{"H", "[", "a", "]"}], "2"], 
+     SuperscriptBox[
+      SubscriptBox["H", "0"], "2"]], "\[Congruent]", 
+    SuperscriptBox[
+     RowBox[{"E", "[", "a", "]"}], "2"]}], "=", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[CapitalOmega]", "m0"], 
+     SuperscriptBox["a", 
+      RowBox[{"-", "3"}]]}], "+", 
+    RowBox[{
+     SubscriptBox["\[CapitalOmega]", "DE0"], 
+     SuperscriptBox["e", 
+      RowBox[{
+       SubsuperscriptBox["\[Integral]", "1", "a"], 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"w", "[", "y", "]"}]}], ")"}], 
+        RowBox[{"dLn", "[", "y", "]"}]}]}]]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.5473724131956205`*^9, 3.547372537615737*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1016, 681},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+Magnification:>FEPrivate`If[
+  FEPrivate`Equal[FEPrivate`$VersionNumber, 6.], 1.25, 1.25 Inherited],
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (November 7, 2010)",
+StyleDefinitions->FrontEnd`FileName[{"Article"}, "JournalArticle.nb", 
+  CharacterEncoding -> "CP936"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 97, 1, 95, "Title"],
+Cell[679, 25, 90, 1, 53, "Author"],
+Cell[CellGroupData[{
+Cell[794, 30, 103, 1, 33, "AbstractSection"],
+Cell[900, 33, 183, 4, 28, "Abstract"],
+Cell[1086, 39, 88, 1, 28, "Abstract"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1211, 45, 109, 1, 62, "Section"],
+Cell[1323, 48, 240, 5, 30, "TextIndent"],
+Cell[1566, 55, 421, 12, 58, "EquationNumbered"],
+Cell[1990, 69, 373, 11, 58, "Equation"],
+Cell[2366, 82, 335, 10, 62, "Equation"],
+Cell[2704, 94, 344, 10, 37, "Equation"],
+Cell[3051, 106, 639, 21, 65, "Equation"],
+Cell[3693, 129, 241, 9, 30, "Text"],
+Cell[3937, 140, 585, 18, 43, "Equation"],
+Cell[4525, 160, 163, 2, 30, "Text"],
+Cell[4691, 164, 831, 27, 67, "EquationNumbered"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

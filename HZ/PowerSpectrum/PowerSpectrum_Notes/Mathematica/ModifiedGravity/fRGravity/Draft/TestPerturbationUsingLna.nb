@@ -1,0 +1,671 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     23040,        661]
+NotebookOptionsPosition[     21673,        613]
+NotebookOutlinePosition[     22044,        629]
+CellTagsIndexPosition[     22001,        626]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"GrowthL", "[", "a_", "]"}], ":=", " ", 
+   RowBox[{
+    FractionBox["5", "2"], " ", "\[CapitalOmega]m0", "  ", 
+    FractionBox[
+     RowBox[{"HL", "[", 
+      RowBox[{
+      "a", ",", "H0", ",", "\[CapitalOmega]m0", ",", "\[CapitalOmega]r0", ",",
+        "\[CapitalOmega]x0"}], "]"}], "H0"], " ", 
+    RowBox[{"NIntegrate", "[", 
+     RowBox[{
+      FractionBox["1", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         FractionBox[
+          RowBox[{"iHL", "[", "temp", "]"}], "H0"], ")"}], "3"]], ",", 
+      RowBox[{"{", 
+       RowBox[{"temp", ",", "0", ",", "a"}], "}"}]}], "]"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"GrowthL1", "[", "a_", "]"}], "=", 
+   RowBox[{"D", "[", 
+    RowBox[{
+     RowBox[{"GrowthL", "[", "a", "]"}], ",", "a"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"H1", "[", "x_", "]"}], "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "1"}], "-", 
+     FractionBox[
+      RowBox[{"0.3333333333333333`", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox["0.0003236`", 
+           SuperscriptBox["a", "5"]]}], "-", 
+         FractionBox["0.81`", 
+          SuperscriptBox["a", "4"]]}], ")"}], " ", "a"}], 
+      RowBox[{"0.73`", "\[VeryThinSpace]", "+", 
+       FractionBox["0.0000809`", 
+        SuperscriptBox["a", "4"]], "+", 
+       FractionBox["0.27`", 
+        SuperscriptBox["a", "3"]]}]]}], "/.", 
+    RowBox[{"{", 
+     RowBox[{"a", "\[Rule]", 
+      RowBox[{"Exp", "[", "x", "]"}]}], "}"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"H", "[", "x_", "]"}], "=", 
+   RowBox[{
+    RowBox[{"71.`", " ", 
+     RowBox[{"\[Sqrt]", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"490.72160447999994`", "\[VeryThinSpace]", "+", 
+          FractionBox["0.14348907000000002`", 
+           SuperscriptBox["a", "12"]], "+", 
+          FractionBox["6.527050470000001`", 
+           SuperscriptBox["a", "9"]], "+", 
+          FractionBox["95.02577316`", 
+           SuperscriptBox["a", "6"]], "+", 
+          FractionBox[
+           RowBox[{"0.0000809`", " ", 
+            RowBox[{"(", 
+             RowBox[{"672.221376`", "\[VeryThinSpace]", "+", 
+              FractionBox["0.531441`", 
+               SuperscriptBox["a", "9"]], "+", 
+              FractionBox["17.242308000000005`", 
+               SuperscriptBox["a", "6"]], "+", 
+              FractionBox["186.47236800000002`", 
+               SuperscriptBox["a", "3"]]}], ")"}]}], 
+           SuperscriptBox["a", "4"]], "+", 
+          FractionBox["491.1555982399999`", 
+           SuperscriptBox["a", "3"]]}], ")"}], "/", 
+        RowBox[{"(", 
+         RowBox[{"688.26705048`", "\[VeryThinSpace]", "+", 
+          FractionBox["0.531441`", 
+           SuperscriptBox["a", "9"]], "+", 
+          FractionBox["17.242308`", 
+           SuperscriptBox["a", "6"]], "+", 
+          FractionBox["214.66220022`", 
+           SuperscriptBox["a", "3"]]}], ")"}]}], ")"}]}]}], "/.", 
+    RowBox[{"{", 
+     RowBox[{"a", "\[Rule]", 
+      RowBox[{"Exp", "[", "x", "]"}]}], "}"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"chih2", "=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"4083.2100000000005`", "\[VeryThinSpace]", "+", 
+         RowBox[{"44159.16000000001`", " ", 
+          SuperscriptBox["a", "3"]}]}], ")"}], "2"], " ", 
+      RowBox[{"(", 
+       RowBox[{"6.8077742987260185`*^10", "+", 
+        RowBox[{"2.208744550253331`*^12", " ", 
+         SuperscriptBox["a", "3"]}], "+", 
+        RowBox[{"3.4210662760504808`*^22", " ", 
+         SuperscriptBox["a", "6"]}], "+", 
+        RowBox[{"3.6998198227471745`*^23", " ", 
+         SuperscriptBox["a", "9"]}], "-", 
+        RowBox[{"3.3513498190323376`*^19", " ", 
+         SuperscriptBox["a", "7"], " ", 
+         SuperscriptBox["kk", "2"]}]}], ")"}]}], ")"}], "/", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1.6672603904100005`*^7", "+", 
+        RowBox[{"3.6062224740720016`*^8", " ", 
+         SuperscriptBox["a", "3"]}], "+", 
+        RowBox[{"1.996577937169939`*^9", " ", 
+         SuperscriptBox["a", "6"]}]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{"6.8077742987260185`*^10", "+", 
+        RowBox[{"2.208744550253331`*^12", " ", 
+         SuperscriptBox["a", "3"]}], "+", 
+        RowBox[{"3.4210662760504808`*^22", " ", 
+         SuperscriptBox["a", "6"]}], "+", 
+        RowBox[{"3.6998198227471745`*^23", " ", 
+         SuperscriptBox["a", "9"]}], "-", 
+        RowBox[{"2.513512364274253`*^19", " ", 
+         SuperscriptBox["a", "7"], " ", 
+         SuperscriptBox["kk", "2"]}]}], ")"}]}], ")"}]}], "/.", 
+   RowBox[{"{", 
+    RowBox[{"a", "\[Rule]", 
+     RowBox[{"Exp", "[", "x", "]"}]}], "}"}]}]}]}], "Input",
+ CellChangeTimes->{{3.5431442172987194`*^9, 3.5431443191625457`*^9}, {
+  3.543144465787932*^9, 3.5431445180539217`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NIntegrate", "::", "nlim"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(temp\\)\[NoBreak] = \[NoBreak]\\!\\(a\\)\
+\[NoBreak] is not a valid limit of integration. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NIntegrate/nlim\\\", ButtonNote -> \
+\\\"NIntegrate::nlim\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.5431444679790573`*^9, 3.5431445217641335`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NIntegrate", "::", "nlim"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(temp\\)\[NoBreak] = \[NoBreak]\\!\\(a\\)\
+\[NoBreak] is not a valid limit of integration. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NIntegrate/nlim\\\", ButtonNote -> \
+\\\"NIntegrate::nlim\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.5431444679790573`*^9, 3.543144521770134*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NIntegrate", "::", "nlim"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(temp\\)\[NoBreak] = \[NoBreak]\\!\\(a\\)\
+\[NoBreak] is not a valid limit of integration. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NIntegrate/nlim\\\", ButtonNote -> \
+\\\"NIntegrate::nlim\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.5431444679790573`*^9, 3.5431445217741346`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \
+\[NoBreak]\\!\\(\\*StyleBox[\\(NIntegrate :: nlim\\), \\\"MessageName\\\"]\\)\
+\[NoBreak] will be suppressed during this calculation. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/stop\\\", \
+ButtonNote -> \\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.5431444679790573`*^9, 3.5431445217781343`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"4083.2100000000005`", "\[VeryThinSpace]", "+", 
+       RowBox[{"44159.16000000001`", " ", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"3", " ", "x"}]]}]}], ")"}], "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{"6.8077742987260185`*^10", "+", 
+      RowBox[{"2.208744550253331`*^12", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"3", " ", "x"}]]}], "+", 
+      RowBox[{"3.4210662760504808`*^22", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"6", " ", "x"}]]}], "+", 
+      RowBox[{"3.6998198227471745`*^23", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"9", " ", "x"}]]}], "-", 
+      RowBox[{"3.3513498190323376`*^19", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"7", " ", "x"}]], " ", 
+       SuperscriptBox["kk", "2"]}]}], ")"}]}], ")"}], "/", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1.6672603904100005`*^7", "+", 
+      RowBox[{"3.6062224740720016`*^8", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"3", " ", "x"}]]}], "+", 
+      RowBox[{"1.996577937169939`*^9", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"6", " ", "x"}]]}]}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{"6.8077742987260185`*^10", "+", 
+      RowBox[{"2.208744550253331`*^12", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"3", " ", "x"}]]}], "+", 
+      RowBox[{"3.4210662760504808`*^22", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"6", " ", "x"}]]}], "+", 
+      RowBox[{"3.6998198227471745`*^23", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"9", " ", "x"}]]}], "-", 
+      RowBox[{"2.513512364274253`*^19", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"7", " ", "x"}]], " ", 
+       SuperscriptBox["kk", "2"]}]}], ")"}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.543144521789135*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"c", "=", 
+   RowBox[{"3", "*", 
+    SuperscriptBox["10", "5"]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"h", "=", "0.71"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"H0", "=", 
+   RowBox[{"100", " ", "h"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[CapitalOmega]x0", " ", "=", "0.73"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[CapitalOmega]m0", " ", "=", "0.27"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[CapitalOmega]r0", " ", "=", 
+   RowBox[{"8.09", "*", 
+    SuperscriptBox["10", 
+     RowBox[{"-", "5"}]]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"fR0", "=", "0.02"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"d1", "=", 
+   RowBox[{"6", " ", 
+    FractionBox["\[CapitalOmega]x0", "\[CapitalOmega]m0"]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"d2", "=", 
+  RowBox[{
+   RowBox[{"-", "fR0"}], " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{
+      FractionBox["12", "\[CapitalOmega]m0"], "-", "9"}], ")"}], 
+    "2"]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"m", "=", 
+   RowBox[{"H0", 
+    SqrtBox["\[CapitalOmega]m0"]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lp", "=", 
+   SqrtBox[
+    RowBox[{"2.47", "*", 
+     SuperscriptBox["10", 
+      RowBox[{"-", "25"}]]}]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Const1", "[", "nn_", "]"}], "=", 
+   RowBox[{
+    RowBox[{"-", 
+     FractionBox[
+      RowBox[{"36", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         FractionBox["\[CapitalOmega]x0", "\[CapitalOmega]m0"], ")"}], "2"]}], 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox["12", "\[CapitalOmega]m0"], "-", "9"}], ")"}], 
+       RowBox[{"nn", "+", "1"}]]]}], 
+    FractionBox["nn", "fR0"]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Const2", "[", "nn_", "]"}], "=", 
+   RowBox[{
+    RowBox[{"-", 
+     FractionBox[
+      RowBox[{"6", 
+       FractionBox["\[CapitalOmega]x0", "\[CapitalOmega]m0"]}], 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox["12", "\[CapitalOmega]m0"], "-", "9"}], ")"}], 
+       RowBox[{"nn", "+", "1"}]]]}], 
+    FractionBox["nn", "fR0"]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[CapitalOmega]", "=", 
+   RowBox[{
+    RowBox[{"\[CapitalOmega]m0", " ", 
+     SuperscriptBox["a", 
+      RowBox[{"-", "3"}]]}], "+", 
+    RowBox[{"\[CapitalOmega]r0", " ", 
+     SuperscriptBox["a", 
+      RowBox[{"-", "4"}]]}]}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.543144633136504*^9, 3.543144633299513*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", "25.12617283950617`"}]], "Output",
+ CellChangeTimes->{3.5431446344355783`*^9}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"HL", "[", 
+    RowBox[{
+    "a_", ",", "HCurrent_", ",", "Omegam0_", ",", "Omegar0_", ",", 
+     "OmegaL_"}], "]"}], "=", 
+   RowBox[{"HCurrent", " ", 
+    SqrtBox[
+     RowBox[{
+      RowBox[{"Omegam0", " ", 
+       SuperscriptBox["a", 
+        RowBox[{"-", "3"}]]}], "+", 
+      RowBox[{"Omegar0", " ", 
+       SuperscriptBox["a", 
+        RowBox[{"-", "4"}]]}], "+", "OmegaL"}]]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"HL1", "[", 
+    RowBox[{
+    "a_", ",", "HCurrent_", ",", "Omegam0_", ",", "Omegar0_", ",", 
+     "OmegaL_"}], "]"}], "=", 
+   RowBox[{"D", "[", 
+    RowBox[{
+     RowBox[{"HL", "[", 
+      RowBox[{
+      "a", ",", "HCurrent", ",", "Omegam0", ",", "Omegar0", ",", "OmegaL"}], 
+      "]"}], ",", "a"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"iHL", "[", "a_", "]"}], ":=", " ", 
+  RowBox[{"H0", "  ", 
+   SqrtBox[
+    RowBox[{" ", 
+     RowBox[{
+      RowBox[{"\[CapitalOmega]m0", " ", 
+       SuperscriptBox["a", 
+        RowBox[{"-", "1"}]]}], "+", " ", "\[CapitalOmega]x0", 
+      " "}]}]]}]}]}], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GrowthL", "[", 
+  SuperscriptBox["10", 
+   RowBox[{"-", "3"}]], "]"}]], "Input"],
+
+Cell[BoxData["0.0011367192349828366`"], "Output",
+ CellChangeTimes->{3.5431449166507196`*^9, 3.5431449733769646`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"kk", "=", "0.001"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"NDSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"Exp", "[", 
+         RowBox[{
+          RowBox[{"-", "2"}], "x"}], "]"}], 
+        RowBox[{
+         RowBox[{"gg", "''"}], "[", "x", "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"H1", "[", "x", "]"}], 
+           RowBox[{"H", "[", "x", "]"}]], "+", 
+          FractionBox["3", 
+           RowBox[{"Exp", "[", "x", "]"}]]}], ")"}], 
+        RowBox[{
+         RowBox[{"gg", "'"}], "[", "x", "]"}]}], "-", 
+       RowBox[{
+        FractionBox["3", "2"], "chih2", " ", 
+        SuperscriptBox["H0", "2"], "\[CapitalOmega]m0", " ", 
+        SuperscriptBox[
+         RowBox[{"Exp", "[", "x", "]"}], 
+         RowBox[{"-", "3"}]], " ", 
+        RowBox[{"gg", "[", "x", "]"}]}]}], "\[Equal]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"gg", "[", 
+       RowBox[{"Log", "[", 
+        SuperscriptBox["10", 
+         RowBox[{"-", "3"}]], "]"}], "]"}], "==", 
+      RowBox[{"GrowthL", "[", 
+       SuperscriptBox["10", 
+        RowBox[{"-", "3"}]], "]"}]}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"gg", "'"}], "[", 
+       RowBox[{"Log", "[", 
+        SuperscriptBox["10", 
+         RowBox[{"-", "3"}]], "]"}], "]"}], "==", 
+      RowBox[{
+       RowBox[{"GrowthL", "'"}], "[", 
+       SuperscriptBox["10", 
+        RowBox[{"-", "3"}]], "]"}]}]}], "}"}], ",", 
+   RowBox[{"gg", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"Log", "[", "0.001", "]"}], ",", 
+     RowBox[{"Log", "[", "1", "]"}]}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.54314433706557*^9, 3.543144446600835*^9}, {
+   3.543144548052637*^9, 3.543144568257793*^9}, 3.5431446003656297`*^9, {
+   3.5431446426600485`*^9, 3.5431446442191377`*^9}, {3.543144695185053*^9, 
+   3.5431447088878365`*^9}, 3.54314488622398*^9, {3.543144994052147*^9, 
+   3.5431449990554333`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NIntegrate", "::", "nlim"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(temp\\)\[NoBreak] = \[NoBreak]\\!\\(#1\\)\
+\[NoBreak] is not a valid limit of integration. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NIntegrate/nlim\\\", ButtonNote -> \
+\\\"NIntegrate::nlim\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.5431444707402153`*^9, {3.543144550826796*^9, 3.5431446010336676`*^9}, {
+   3.5431446365917015`*^9, 3.5431446489554086`*^9}, {3.543144709872893*^9, 
+   3.543144715306204*^9}, 3.5431448868360147`*^9, {3.543144974736042*^9, 
+   3.543144999577463*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NIntegrate", "::", "nlim"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(temp\\)\[NoBreak] = \[NoBreak]\\!\\(#1\\)\
+\[NoBreak] is not a valid limit of integration. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NIntegrate/nlim\\\", ButtonNote -> \
+\\\"NIntegrate::nlim\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.5431444707402153`*^9, {3.543144550826796*^9, 3.5431446010336676`*^9}, {
+   3.5431446365917015`*^9, 3.5431446489554086`*^9}, {3.543144709872893*^9, 
+   3.543144715306204*^9}, 3.5431448868360147`*^9, {3.543144974736042*^9, 
+   3.5431449995824633`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NIntegrate", "::", "nlim"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(temp\\)\[NoBreak] = \[NoBreak]\\!\\(#1\\)\
+\[NoBreak] is not a valid limit of integration. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NIntegrate/nlim\\\", ButtonNote -> \
+\\\"NIntegrate::nlim\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.5431444707402153`*^9, {3.543144550826796*^9, 3.5431446010336676`*^9}, {
+   3.5431446365917015`*^9, 3.5431446489554086`*^9}, {3.543144709872893*^9, 
+   3.543144715306204*^9}, 3.5431448868360147`*^9, {3.543144974736042*^9, 
+   3.5431449995854635`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \
+\[NoBreak]\\!\\(\\*StyleBox[\\(NIntegrate :: nlim\\), \\\"MessageName\\\"]\\)\
+\[NoBreak] will be suppressed during this calculation. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/stop\\\", \
+ButtonNote -> \\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.5431444707402153`*^9, {3.543144550826796*^9, 3.5431446010336676`*^9}, {
+   3.5431446365917015`*^9, 3.5431446489554086`*^9}, {3.543144709872893*^9, 
+   3.543144715306204*^9}, 3.5431448868360147`*^9, {3.543144974736042*^9, 
+   3.543144999588464*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NIntegrate", "::", "izero"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Integral and error estimates are 0 on all integration \
+subregions. Try increasing the value of the MinRecursion option. If value of \
+integral may be 0, specify a finite value for the AccuracyGoal option. \\!\\(\
+\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/NIntegrate\\\", ButtonNote -> \
+\\\"NIntegrate::izero\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.5431444707402153`*^9, {3.543144550826796*^9, 3.5431446010336676`*^9}, {
+   3.5431446365917015`*^9, 3.5431446489554086`*^9}, {3.543144709872893*^9, 
+   3.543144715306204*^9}, 3.5431448868360147`*^9, {3.543144974736042*^9, 
+   3.5431449996284657`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NDSolve", "::", "mxst"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Maximum number of \[NoBreak]\\!\\(10000\\)\[NoBreak] steps \
+reached at the point \[NoBreak]\\!\\(x\\)\[NoBreak] == \
+\[NoBreak]\\!\\(-5.476081345567667`\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NDSolve/mxst\\\", ButtonNote -> \
+\\\"NDSolve::mxst\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.5431444707402153`*^9, {3.543144550826796*^9, 3.5431446010336676`*^9}, {
+   3.5431446365917015`*^9, 3.5431446489554086`*^9}, {3.543144709872893*^9, 
+   3.543144715306204*^9}, 3.5431448868360147`*^9, {3.543144974736042*^9, 
+   3.543145002387624*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"gg", "[", "x", "]"}], "\[Rule]", 
+    RowBox[{
+     TagBox[
+      RowBox[{"InterpolatingFunction", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "6.907755278982137`"}], ",", 
+           RowBox[{"-", "5.476081345567667`"}]}], "}"}], "}"}], 
+        ",", "\<\"<>\"\>"}], "]"}],
+      False,
+      Editable->False], "[", "x", "]"}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.543144470863222*^9, {3.5431445508968*^9, 3.5431446018887167`*^9}, {
+   3.5431446370297265`*^9, 3.543144649397434*^9}, {3.54314471018091*^9, 
+   3.5431447155592184`*^9}, 3.543144887051027*^9, {3.543144977584205*^9, 
+   3.543145002426626*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Log", "[", "0.001", "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"-", "6.907755278982137`"}]], "Output",
+ CellChangeTimes->{3.543145012967229*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Log", "[", "1", "]"}]], "Input"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{3.543145018459543*^9}]
+}, Open  ]]
+},
+Evaluator->"Third Kernel",
+WindowSize->{707, 553},
+WindowMargins->{{38, Automatic}, {Automatic, 30}},
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 4996, 137, 616, "Input"],
+Cell[5578, 161, 520, 10, 21, "Message"],
+Cell[6101, 173, 518, 10, 21, "Message"],
+Cell[6622, 185, 520, 10, 21, "Message"],
+Cell[7145, 197, 559, 11, 21, "Message"],
+Cell[7707, 210, 1994, 50, 113, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9738, 265, 2638, 85, 437, "Input"],
+Cell[12379, 352, 106, 2, 44, "Output"]
+}, Open  ]],
+Cell[12500, 357, 1130, 38, 143, "Input"],
+Cell[CellGroupData[{
+Cell[13655, 399, 104, 3, 47, "Input"],
+Cell[13762, 404, 117, 1, 44, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13916, 410, 2054, 59, 137, "Input"],
+Cell[15973, 471, 726, 14, 21, "Message"],
+Cell[16702, 487, 728, 14, 21, "Message"],
+Cell[17433, 503, 728, 14, 21, "Message"],
+Cell[18164, 519, 764, 15, 21, "Message"],
+Cell[18931, 536, 816, 15, 56, "Message"],
+Cell[19750, 553, 778, 15, 21, "Message"],
+Cell[20531, 570, 756, 21, 44, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21324, 596, 60, 1, 45, "Input"],
+Cell[21387, 599, 104, 2, 44, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21528, 606, 56, 1, 45, "Input"],
+Cell[21587, 609, 70, 1, 44, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

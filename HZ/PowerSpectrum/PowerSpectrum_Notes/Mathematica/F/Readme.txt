@@ -1,0 +1,1 @@
+w_1=-1;w_2=-0.5;\Omega _{\text{DE0}}=0.734;\Omega _{\text{k0}}=0;\Omega _{\text{m0}}=0.1334\left/\left(0.71^2\right)\right.;\Omega _{\text{r0}}=8.09*10^{-5};h=0.71;H_0=\frac{100 h}{300000};\Omega _{\text{m0},s}=1;\Omega _{\text{r0},s}=8.09*10^{-5};

@@ -1,0 +1,78 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      2079,         69]
+NotebookOptionsPosition[      1699,         51]
+NotebookOutlinePosition[      2042,         66]
+CellTagsIndexPosition[      1999,         63]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+A possible method to verify modified gravity\
+\>", "Section",
+ CellChangeTimes->{{3.5445989444445505`*^9, 3.544598968788943*^9}}],
+
+Cell["\<\
+It is possible to verify modified gravity through many methods\
+\>", "Text",
+ CellChangeTimes->{{3.5446003852489595`*^9, 3.5446004272093596`*^9}}],
+
+Cell["\<\
+First one is funny. It is possible to find gravity modification through \
+comets. Since comets comes from a far awary place, it\[CloseCurlyQuote]s \
+obits can be calculated and the results can be tested through observation and \
+even meteor show observation.\
+\>", "Text",
+ CellChangeTimes->{{3.544600431845625*^9, 3.5446004863167405`*^9}, {
+  3.5446008085971737`*^9, 3.54460085468581*^9}, {3.5446008991333523`*^9, 
+  3.5446009085498905`*^9}}],
+
+Cell["\<\
+Second one is to test it through power spectrum. We have screening effect in \
+modifed gravity. Then the power spectrum should be modified at some scale.\
+\>", "Text",
+ CellChangeTimes->{{3.5446009131491537`*^9, 3.544600916613352*^9}, {
+  3.5446011571821117`*^9, 3.5446011829655867`*^9}, {3.544616998426179*^9, 
+  3.544617043777773*^9}}]
+}, Open  ]]
+},
+WindowSize->{1016, 681},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 139, 3, 71, "Section"],
+Cell[721, 27, 156, 3, 30, "Text"],
+Cell[880, 32, 453, 8, 49, "Text"],
+Cell[1336, 42, 347, 6, 30, "Text"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

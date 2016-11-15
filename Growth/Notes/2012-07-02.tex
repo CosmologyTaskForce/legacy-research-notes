@@ -1,0 +1,169 @@
+% !TEX program = xelatex
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{amsthm,amsfonts,amssymb,bm}
+\usepackage[fleqn]{amsmath}
+\addtolength{\textheight}{2.0cm}
+\addtolength{\voffset}{-2cm}
+\addtolength{\hoffset}{-1.5cm}
+\addtolength{\textwidth}{4.0cm}
+
+%\allowdisplaybreaks
+
+%\usepackage{subeqnarray}
+\usepackage{mathrsfs}
+%\usepackage{color}
+%\usepackage{url}
+%\usepackage{ulem}
+\usepackage{indentfirst}
+%\usepackage{textcomp}
+%\usepackage{graphics}
+%\usepackage{graphicx}
+%\usepackage[hang,small,bf]{caption}
+%\setlength{\captionmargin}{50pt}
+
+
+\usepackage{enumerate}
+
+%%Here is the configuration for chinese. 
+%\usepackage[cm-default]{fontspec}
+%\usepackage{xunicode}
+%\usepackage{xltxtra}
+%\setmainfont{AR PL UKai CN}
+%\setsansfont[BoldFont=SimHei]{KaiTi_GB2312}
+%\setmonofont{NSimSun}
+
+%\XeTeXlinebreaklocale "zh"
+%\XeTeXlinebreakskip = 0pt plus 1pt
+
+
+%\usepackage{tikz}
+%\usetikzlibrary{mindmap,trees}
+\usepackage{graphicx}
+%\usepackage[hang,small,bf]{caption}
+%\setlength{\captionmargin}{50pt}
+
+
+
+\begin{document}
+\title{Title}
+\author{MA Lei}
+%\maketitle
+
+\newcommand{\dd}{\mathrm d}
+\newcommand{\HH}{\mathcal H}
+\newcommand{\CN}{{\it Cosmologia Notebook}}
+\newenvironment{eqnset}
+{\begin{equation}\left \bracevert \begin{array}{l}}
+{\end{array} \right. \end{equation}}
+
+\newenvironment{eqn}
+{\begin{equation}\left \bracevert \begin{array}{l}}
+{\end{array} \right. \end{equation}}
+
+
+
+
+
+
+
+
+
+
+\section{Checkpoint 2012-07-01}
+
+Follow arXiv:1205.4688
+
+\subsection{What do the author say?}
+
+Transition redshift could be viewed as a new cosmological number in data fitting.
+
+\subsection{What is transition redshift and how do it enter cosmology?}
+
+
+Conventions
+\begin{enumerate}[\bf\tiny{TR:Con}-1]
+\item
+Conventions in {\CN} 2012-A, Page ...
+\end{enumerate}
+
+\begin{enumerate}[\bf\tiny{TR-BE}-1]
+\item
+Deceleration parameter $q(z)$ at $z$.
+
+\item
+Transition redshift $zt$ is the redshift that make $\ddot a = 0$, thus $q(zt)=0$.
+
+\item
+Hubble function $H(z)$.
+
+\item
+Friedmann equations with $\Omega_{k0}\neq 0$. And their simplifications.
+
+\item
+Cosmography.
+\begin{itemize}
+\item[{\small +}]
+Angular diameter distance in RSM P19.
+
+\end{itemize}
+
+\end{enumerate}
+
+
+
+LCDM model equations on {\CN} 2012-A.
+
+
+
+\subsection{Some basis concepts of statistics.}
+
+Likelihood under a model, posterior, prior, 
+
+Chisquare, reduced chisquare...
+
+
+\subsection{How to analysis SN data?}
+
+\subsubsection{Chisquare fitting and Chisquare distribution}
+
+....
+
+
+LogLikelihood, Under some assumptions
+\begin{equation}
+	-2\ln {\cal L} =\chi^2 
+\end{equation}
+
+
+\subsubsection{Program}
+
+
+I wrote a mathematica chisquare without marginalization of $H_0$.
+
+I can use cosmomc and getdist and mathematica to get the MCMC results. I created a table of what is the output.
+
+
+What to do next?
+Finish the python program or write a new mathematica program of mcmc for this simple LCDM model.
+Revise cosmomc to calculate LCDM. This requires a lot of revise.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
